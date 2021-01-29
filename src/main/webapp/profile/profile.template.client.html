@@ -3,45 +3,28 @@
 <head>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Profile</title>
 </head>
 <body>
     <div class="container">
     <h1>Profile</h1>
-
-        <div class="alert alert-danger" role="alert">
-            Danger Will Robinson
-        </div>
-
-
         <div class="alert alert-success" role="alert">
-            Yay!!!
+            Changes saved!
         </div>
 
         <div class="mb-3 row">
-        <label
-               class="col-sm-2 col-form-label">
-            Username
-        </label>
-        <div class="col-sm-10">
-            <input type="text"
-                   readonly
-                   class="form-control"
-                   id="username"
-                   value="alice"/>
+            <label
+                   class="col-sm-2 col-form-label">
+                Username
+            </label>
+            <div class="col-sm-10">
+                <input type="text"
+                       readonly
+                       class="form-control"
+                       id="username"
+                       value="Alice"/>
+            </div>
         </div>
-    </div>
-    <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label">
-            Password
-        </label>
-        <div class="col-sm-10">
-            <input type="password"
-                   class="form-control"
-                   id="inputPassword">
-        </div>
-    </div>
-
         <div class="mb-3 row">
             <label for="phone"
                    class="col-sm-2 col-form-label">
@@ -50,6 +33,7 @@
             <div class="col-sm-10">
                 <input type="tel"
                        class="form-control"
+                       placeholder="(123) 456-7890"
                        id="phone"/>
             </div>
         </div>
@@ -63,7 +47,7 @@
                 <input type="email"
                        class="form-control"
                        title="Please enter a valid email"
-                       placeholder="alice@wonderland"
+                       placeholder="alice@wonderland.com"
                        id="email"/>
             </div>
         </div>
@@ -77,7 +61,7 @@
                 <select id="role" class="form-control">
                     <option>Faculty</option>
                     <option>Student</option>
-                    <option>Staff</option>
+                    <option>Admin</option>
                 </select>
             </div>
         </div>
@@ -91,8 +75,19 @@
                 <input type="date"
                        class="form-control"
                        title="Please enter your DOB"
-                       value="2021-01-25"
                        id="dob"/>
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="dob"
+                   class="col-sm-2 col-form-label">
+
+            </label>
+            <div class="col-sm-10">
+                <a class="btn btn-success btn-block">
+                    Update
+                </a>
             </div>
         </div>
 
