@@ -7,67 +7,73 @@
     <link href="../register/register.template.client.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="container">
-    <h1>Register</h1>
+    <div class="container">
+        <h1>Register</h1>
 
-    <div class="mb-3 row">
-        <label for="username" class="col-sm-2 col-form-label">
-            Username
-        </label>
-        <div class="col-sm-10">
-            <input type="text"
-                   class="form-control"
-                   id="username"/>
+        <div class="mb-3 row">
+            <label for="username" class="col-sm-2 col-form-label">
+                Username
+            </label>
+            <div class="col-sm-10">
+                <input type="text"
+                       class="form-control"
+                       id="username"/>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">
+                Password
+            </label>
+            <div class="col-sm-10">
+                <input type="password"
+                       class="form-control"
+                       id="inputPassword">
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="verifyPassword" class="col-sm-2 col-form-label">
+                Verify Password
+            </label>
+            <div class="col-sm-10">
+                <input type="password"
+                       class="form-control"
+                       id="verifyPassword">
+            </div>
+        </div>
+
+
+        <div class="mb-3 row">
+            <label for="verifyPassword"
+                   class="col-sm-2 col-form-label">
+            </label>
+            <div class="col-sm-10">
+                <a class="btn btn-primary btn-block"
+                   href="../profile/profile.template.client.html">
+                    Sign up
+                </a>
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="verifyPassword"
+                   class="col-sm-2 col-form-label">
+            </label>
+            <div class="col-sm-10">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <a href="../login/login.template.client.html">
+                            Login
+                        </a>
+                    </div>
+                    <div>
+                        <a class="cancel-button" href="../index.html">
+                            Cancel
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label">
-            Password
-        </label>
-        <div class="col-sm-10">
-            <input type="password"
-                   class="form-control"
-                   id="inputPassword">
-        </div>
-    </div>
-
-    <div class="mb-3 row">
-        <label for="verifyPassword" class="col-sm-2 col-form-label">
-            Verify Password
-        </label>
-        <div class="col-sm-10">
-            <input type="password"
-                   class="form-control"
-                   id="verifyPassword">
-        </div>
-    </div>
-
-
-    <div class="mb-3 row">
-        <label for="verifyPassword"
-               class="col-sm-2 col-form-label">
-
-        </label>
-        <div class="col-sm-10">
-            <a class="btn btn-primary btn-block"
-               href="../profile/profile.template.client.html">
-                Sign up
-            </a>
-        </div>
-    </div>
-
-    <div class="d-flex justify-content-between">
-        <div>
-            <a href="../login/login.template.client.html">
-                Login
-            </a>
-        </div>
-        <div>
-            <a class="cancel-button" href="../index.html">
-                Cancel
-            </a>
-        </div>
-    </div>
-</div>
 </body>
 </html>
