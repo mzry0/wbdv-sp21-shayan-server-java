@@ -1,109 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
-    <meta charset="UTF-8">
-    <title>Profile</title>
-</head>
-<body>
-    <div class="container">
-    <h1>Profile</h1>
-        <div class="alert alert-success" role="alert">
-            Changes saved!
-        </div>
-
-        <div class="mb-3 row">
-            <label
-                   class="col-sm-2 col-form-label">
-                Username
-            </label>
-            <div class="col-sm-10">
-                <input type="text"
-                       readonly
-                       class="form-control"
-                       id="username"
-                       value="Alice"/>
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+              rel="stylesheet"/>
+        <link href="../profile/profile.template.client.css"
+              rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>
+            Profile
+        </title>
+    </head>
+    <body>
+        <div class="container">
+        <h1>
+            Profile
+        </h1>
+            <div class="alert alert-success"
+                 role="alert">
+                Changes saved!
             </div>
-        </div>
-        <div class="mb-3 row">
-            <label for="phone"
-                   class="col-sm-2 col-form-label">
-                Phone
-            </label>
-            <div class="col-sm-10">
-                <input type="tel"
-                       class="form-control"
-                       placeholder="(123) 456-7890"
-                       id="phone"/>
+
+            <div class="mb-3 row">
+                <label
+                       class="col-sm-2 col-form-label">
+                    Username
+                </label>
+                <div class="col-sm-10">
+                    <input type="text"
+                           readonly
+                           class="form-control"
+                           id="username"
+                           value="Alice"/>
+                </div>
             </div>
-        </div>
-
-        <div class="mb-3 row">
-            <label for="email"
-                   class="col-sm-2 col-form-label">
-                Email
-            </label>
-            <div class="col-sm-10">
-                <input type="email"
-                       class="form-control"
-                       title="Please enter a valid email"
-                       placeholder="alice@wonderland.com"
-                       id="email"/>
+            <div class="mb-3 row">
+                <label for="phone"
+                       class="col-sm-2 col-form-label">
+                    Phone
+                </label>
+                <div class="col-sm-10">
+                    <input type="tel"
+                           class="form-control"
+                           placeholder="(123) 456-7890"
+                           id="phone"/>
+                </div>
             </div>
-        </div>
 
-        <div class="mb-3 row">
-            <label for="role"
-                   class="col-sm-2 col-form-label">
-                Role
-            </label>
-            <div class="col-sm-10">
-                <select id="role" class="form-control">
-                    <option>Faculty</option>
-                    <option>Student</option>
-                    <option>Admin</option>
-                </select>
+            <div class="mb-3 row">
+                <label for="email"
+                       class="col-sm-2 col-form-label">
+                    Email
+                </label>
+                <div class="col-sm-10">
+                    <input type="email"
+                           class="form-control"
+                           title="Please enter a valid email"
+                           placeholder="alice@wonderland.com"
+                           id="email"/>
+                </div>
             </div>
-        </div>
 
-        <div class="mb-3 row">
-            <label for="dob"
-                   class="col-sm-2 col-form-label">
-                DOB
-            </label>
-            <div class="col-sm-10">
-                <input type="date"
-                       class="form-control"
-                       title="Please enter your DOB"
-                       id="dob"/>
+            <div class="mb-3 row">
+                <label for="role"
+                       class="col-sm-2 col-form-label">
+                    Role
+                </label>
+                <div class="col-sm-10">
+                    <select id="role" class="form-control">
+                        <option>Faculty</option>
+                        <option>Student</option>
+                        <option>Admin</option>
+                    </select>
+                </div>
             </div>
-        </div>
 
-        <div class="mb-3 row">
-            <label for="dob"
-                   class="col-sm-2 col-form-label">
-
-            </label>
-            <div class="col-sm-10">
-                <a class="btn btn-success btn-block">
-                    Update
-                </a>
+            <div class="mb-3 row">
+                <label for="dob"
+                       class="col-sm-2 col-form-label">
+                    DOB
+                </label>
+                <div class="col-sm-10">
+                    <input type="date"
+                           class="form-control"
+                           title="Please enter your DOB"
+                           id="dob"/>
+                </div>
             </div>
-        </div>
 
-        <div class="mb-3 row">
-            <label for="dob"
-                   class="col-sm-2 col-form-label">
+            <div class="mb-3 row">
+                <label for="dob"
+                       class="col-sm-2 col-form-label">
 
-            </label>
-            <div class="col-sm-10">
-                <a class="btn btn-danger btn-block"
-                   href="../index.html">
-                    Logout
-                </a>
+                </label>
+                <div class="col-sm-10">
+                    <a class="btn btn-success btn-block">
+                        Update
+                    </a>
+                </div>
             </div>
-        </div>
 
-    </div>
-</body>
+            <div class="mb-3 row">
+                <label for="dob"
+                       class="col-sm-2 col-form-label">
+
+                </label>
+                <div class="col-sm-10">
+                    <a class="btn btn-danger btn-block"
+                       href="../index.html">
+                        Logout
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </body>
 </html>
