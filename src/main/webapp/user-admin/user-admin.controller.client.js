@@ -27,14 +27,17 @@ function createUser(user) {
         })
 }
 
-var selectedCourse = null
+var selectedUser = null
 function selectCourse(event) {
-    var selectBtn = jQuery(event.target)
-    var theId = selectBtn.attr("id")
-    selectedCourse = users.find(course => course._id === theId)
-    titleFld.val(selectedCourse.title)
-    $seatsFld.val(selectedCourse.seats)
-    $semesterFld.val(selectedCourse.semester)
+    var selectIcon = jQuery(event.target)
+    var selectIconId = selectIcon.attr("id")
+    var userId = selectIconId.substring(selectIconId.indexOf(':')+1)
+    selectedUser = users.find(user => user._id === userId)
+    $usernameFld.val(selectedUser.username)
+    $passwordFld.val(selectedUser.password)
+    $firstnameFld.val(selectedUser.firstname)
+    $lastnameFld.val(selectedUser.lastname)
+    $roleFld.val(selectedUser.role)
 }
 
 function deleteUser(event) {
@@ -83,14 +86,16 @@ function renderUsers(users) {
 }
 
 function updateCourse() {
-    console.log(selectedCourse)
-    selectedCourse.title = titleFld.val()
-    selectedCourse.seats = $seatsFld.val()
-    selectedCourse.semester = $semesterFld.val()
-    courseService.updateCourse(selectedCourse._id, selectedCourse)
+    console.log(selectedUser)
+    selectedUser.username = $usernameFld.val()
+    selectedUser.password = $passwordFld.val()
+    selectedUser.firstname = $firstnameFld.val()
+    selectedUser.lastname = $lastnameFld.val()
+    selectedUser.role = $roleFld.val()
+    userService.updateUser(selectedUser._id, selectedUser)
         .then(function (status) {
-            var index = users.findIndex(course => course._id === selectedCourse._id)
-            users[index] = selectedCourse
+            var index = users.findIndex(user => user._id === selectedUser._id)
+            users[index] = selectedUser
             renderUsers(users)
         })
 }
@@ -103,10 +108,10 @@ function init() {
     $roleFld = $(".wbdv-role-fld")
     $createIcon = jQuery(".wbdv-create-icon")
     // addUserIcon.click(addUser)
-    $updateBtn = $(".wbdv-update-btn")
+    $updateIcon = $(".wbdv-update-icon")
     theTableBody = jQuery("tbody")
 
-    $updateBtn.click(updateCourse)
+    $updateIcon.click(updateCourse)
     $createIcon.click(() => {
             createUser({
                 username: $usernameFld.val(),
