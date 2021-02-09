@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Admin</title>
+    <link rel="stylesheet" href=
+            "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href=
+            "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!--    <link href="course.style.client.css" rel="stylesheet" />-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <script src="../services/user.service.client.js"></script>
+    <script src="user-admin.controller.client.js"></script>
+
+</head>
+<body>
+<div class="container-fluid">
+    <h1 id="the-course-list-heading">Course List</h1>
+<!--    <button id="wbdv-create-course">Add Course</button>-->
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Username</th>
+            <th>Password</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Role</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr class="wbdv-form">
+            <td><input class="form-control wbdv-username-fld"
+                       placeholder="Username" /></td>
+            <td><input class="form-control wbdv-password-fld"
+                       placeholder="Password" /></td>
+            <td><input class="form-control wbdv-firstname-fld"
+                       placeholder="First Name" /></td>
+            <td><input class="form-control wbdv-lastname-fld"
+                       placeholder="Last Name" /></td>
+            <td><select class="form-control wbdv-role-fld">
+                <option value="FACULTY">Faculty</option>
+                <option value="STUDENT">Student</option>
+                <option value="ADMIN">Admin</option>
+                </select></td>
+            <td><span class="pull-right" style="white-space: nowrap">
+                <i class="fa-2x fa fa-plus wbdv-create-icon"></i>
+                <i class="fa-2x fa fa-check wbdv-update-icon"></i>
+                </span></td>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
