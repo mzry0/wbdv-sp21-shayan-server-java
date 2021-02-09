@@ -58,6 +58,14 @@ function deleteUser(event) {
         })
 }
 
+function clearForm() {
+    $usernameFld.val("")
+    $passwordFld.val("")
+    $firstnameFld.val("")
+    $lastnameFld.val("")
+    $roleFld.prop('selectedIndex',0)
+}
+
 function renderUsers(users) {
     theTableBody.empty()
     for (var i = 0; i < users.length; i++) {
@@ -98,6 +106,7 @@ function updateCourse() {
             users[index] = selectedUser
             renderUsers(users)
         })
+    clearForm()
 }
 
 function init() {
@@ -120,13 +129,8 @@ function init() {
                 lastname: $lastnameFld.val(),
                 role: $roleFld.val()
             })
-            $usernameFld.val("")
-            $passwordFld.val("")
-            $firstnameFld.val("")
-            $lastnameFld.val("")
-            $roleFld.prop('selectedIndex',0)
-        }
-    )
+    clearForm()
+    })
 
     userService.findAllUsers()
         .then(function (actualUsersFromServer) {
