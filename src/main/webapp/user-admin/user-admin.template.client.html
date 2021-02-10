@@ -7,7 +7,7 @@
             "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href=
             "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <!--    <link href="course.style.client.css" rel="stylesheet" />-->
+    <link href="user-admin.style.client.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
     <script src="../services/user.service.client.js"></script>
@@ -15,10 +15,9 @@
 
 </head>
 <body>
-<div class="container-fluid">
-    <h1 id="the-course-list-heading">User List</h1>
-<!--    <button id="wbdv-create-course">Add Course</button>-->
-    <table class="table">
+<div class="container-fluid mt-3">
+    <h1 id="wbdv-user-list-heading" class="display-3">User List</h1>
+    <table class="table mt-3">
         <thead>
         <tr>
             <th>Username</th>
@@ -32,6 +31,7 @@
             <td><input class="form-control wbdv-username-fld"
                        placeholder="Username" /></td>
             <td><input class="form-control wbdv-password-fld"
+                       type="password"
                        placeholder="Password" /></td>
             <td><input class="form-control wbdv-firstname-fld"
                        placeholder="First Name" /></td>
@@ -43,8 +43,9 @@
                 <option value="ADMIN">Admin</option>
                 </select></td>
             <td><span class="pull-right" style="white-space: nowrap">
-                <i class="fa-2x fa fa-plus wbdv-create-icon"></i>
-                <i class="fa-2x fa fa-check wbdv-update-icon"></i>
+                <i class="fa-2x fa fa-search wbdv-update-icon btn btn-dark"></i>
+                <i class="fa-2x fa fa-plus wbdv-create-icon btn btn-dark"></i>
+                <i class="fa-2x fa fa-check wbdv-update-icon btn btn-dark"></i>
                 </span></td>
         </tr>
         </thead>
