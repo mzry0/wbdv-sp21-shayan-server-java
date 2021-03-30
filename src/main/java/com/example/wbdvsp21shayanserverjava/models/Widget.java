@@ -1,6 +1,12 @@
 package com.example.wbdvsp21shayanserverjava.models;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="widgets")
 public class Widget {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String type;
     private Integer size;
