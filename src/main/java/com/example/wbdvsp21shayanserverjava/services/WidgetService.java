@@ -37,6 +37,7 @@ public class WidgetService {
 
         originalWidget.setSize(newWidget.getSize());
         originalWidget.setText(newWidget.getText());
+        originalWidget.setType(newWidget.getType());
         // Image tag
         originalWidget.setUrl(newWidget.getUrl());
         originalWidget.setWidth(newWidget.getWidth());
